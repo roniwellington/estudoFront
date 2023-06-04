@@ -68,6 +68,18 @@ main {
 
 /****************************** Equipamentos *****/
 
+.alterar {
+    margin: 2px;
+    width: 200px;
+}
+
+.botoes {
+    position: relative;
+    right: 5%;
+    bottom: 10%;
+    display: flex;
+}
+
 .equipamentos {
     flex-basis: 32%;
 }
