@@ -12,10 +12,18 @@ form.addEventListener("submit", (evento)=> {
     const nome = evento.target.elements['nome']
     const quantidade = evento.target.elements['quantidade']
 
+    const existe = itens.find( elemento => elemento.nome === nome.value)
+
     const itemAtual = {
         "nome": nome.value,
         "quantidade": quantidade.value
     }
+
+    if(existe) {
+        itemAtual.id = existe.id
+    }
+
+   
 
     criaElemento(itemAtual)
 
@@ -35,7 +43,7 @@ function criaElemento(item) {
 
     const numeroItem = document.createElement('strong')
     numeroItem.innerHTML = item.quantidade
-
+    numeroItem
     novoItem.appendChild (numeroItem )
     novoItem.innerHTML += item.nome
    
