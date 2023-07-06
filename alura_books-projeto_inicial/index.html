@@ -11,10 +11,11 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css" />
 </head>
+<header class="header">
+  <h1><img src="imagens/Logo-1.png" /></h1>
+</header>
+
 <body>
-  <header class="header">
-    <h1><img src="imagens/Logo-1.png" /></h1>
-  </header>
   <section class="banner"></section>
   <nav class="wrap">
     <ul class="nav">
@@ -24,7 +25,7 @@
       <li><button class="btn btn-back" href="#" id="btnFiltrarLivrosBack" value="back-end">LIVROS DE BACK-END</button>
       </li>
       <li><button class="btn btn-dados" href="#" id="btnFiltrarLivrosDados" value="dados">LIVROS DE DADOS</button></li>
-      <li><button class="btn btn-disponiveis" href="#" id="btnLivrosDisponiveis">LIVROS DISPONÍVEIS</button></li>
+      <li><button class="btn btn-disponiveis" href="#" id="btnLivrosDisponiveis" value="disponivel">LIVROS DISPONÍVEIS</button></li>
       <li><button class="btn btn-ordenacao" href="#" id="btnOrdenarPorPreco">ORDENAR POR PREÇO</button></li>
     </ul>
   </nav>
@@ -265,20 +266,19 @@
   </section>
   <section id="valor_total_livros_disponiveis">
     <div class="livros__disponiveis">
-      <p>Todos os livros disponíveis por R$ <span id="valor">299,00</span></p>
+      <p>Todos os livros disponíveis por R$ <span id="valor">199,00</span></p>
     </div>
   </section>
-
 
   <footer class="rodape">
     <p>Alura - Mergulhe em tecnologia</p>
   </footer>
-
-  <script src="./app/main.js"></script>
-  <script src="./app/metodoForEach.js"></script>
-  <script src="./app/metodoMap.js"></script>
-  <script src="./app/metodoFilter.js"></script>
-  <script src="./app/metodoSort.js"></script>
+  <script src="app/main.js"></script>
+  <script src="app/metodoForEach.js"></script>
+  <script src="app/metodoMap.js"></script>
+  <script src="app/metodoFilter.js"></script>
+  <script src="app/metodoSort.js"></script>
+  <script src="app/metodoReduce.js"></script>
 </body>
 
 </html>
