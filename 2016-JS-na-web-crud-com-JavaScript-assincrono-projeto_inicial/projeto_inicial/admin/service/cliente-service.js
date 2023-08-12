@@ -5,7 +5,7 @@ const listaClientes = () => {
                 return resposta.json()
             }
            
-            
+            throw new Error('Não foi possível listar os clientes')
         })
 }
 
