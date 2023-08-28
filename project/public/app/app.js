@@ -5,11 +5,18 @@ import { debounceTime, takeUntil, partialize, pipe } from "./utils/operators.js"
 import {EventEmitter } from "./utils/event-emitter.js";
 import { Maybe } from "./utils/maybe.js";
 
-const value = Maybe.of(null)
+const value = Maybe.of(10)
 .map(value => value + 10)
 .map(value => value + 30)
 .getOrElse(0);
 alert(value);
+
+const textToArray = textM => textM.map( text => Array.from(text));
+const arrayToText = arrayM => arrayM.map( array => array.join(''));
+
+const transform = pipe(textToArray, arrayToText)
+const result = transform(Maybe.of('Cangaceiro'));
+alert(result.getOrElse(''))
 
 const operations = pipe(
     partialize(takeUntil, 3),
