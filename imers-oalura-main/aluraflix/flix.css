@@ -1,0 +1,68 @@
+.projetos-flix{
+    width: 96%;
+    height: 800px;
+    text-align: center;
+    background-image: url("../img/dia-04-aluraflix-e-filmes.png");
+    background-color: #000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.main {
+    text-align: center;
+    padding: 20px;
+}
+
+.page-title {
+    color: #fff;
+    margin: 0 0 5px;
+}
+
+.page-subtitle {
+    color: #fff;
+    margin-top: 5px;
+}
+
+.page-logo {
+    width: 200px;
+}
+
+.alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+}
+
+#listaFilmes img {
+    margin: 10px;
+    max-width: 250px;
+}
+
+.form-wrapper {
+    margin: 0 0 15px;
+}
+
+.form-wrapper input {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 15px;
+}
+
+.form-wrapper button {
+    border: 0;
+    color: #fff;
+    background: #da1e26;
+    font-weight: bold;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-wrapper button:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imersão Alura</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="jogo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Elsie:wght@900&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="cabecalho">
+            <div class="tema">
+                <button class="mais"><a href="../index.html">Home</a></button>
+                <button class="mais"><a href="jogo.html">Hero Trunfo</a></button>
+                <button class="mais"><a href="../aluraflix/flix.html">Flix flix</a></button>
+                <button onclick="mudaTema()">Alterar Tema</button>
+            </div>
+        </header>
+        <main class="projetos projeto-jogo">
+            <div class="jogo">
+                <img src="../img/logo-imersao-super-trunfo.png" class="page-logo"
+                    alt="">
+                <h1 class="page-title">Super Trunfo</h1>
+                <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+                <form id="form">
+                    <h2>Escolha o seu atributo</h2>
+                    <div class="wrapper">
+                        <div>
+                            <div id="carta-jogador">
+                                <img src="../img/card-super-trunfo-transparent-ajustado.png"
+                                    style=" width: inherit; height: inherit; position: absolute;">
+                                <h3></h3>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="carta-maquina" class="carta"><img
+                                    src="../img/card-super-trunfo-transparent-ajustado.png"
+                                    style=" width: inherit; height: inherit; position: absolute;"></div>
+                        </div>
+                    </div>
+                    <button class="button-jogar" type="button" id="btnJogar" onclick="jogar()" disabled="false">Jogar</button>
+                    <div id="resultado"></div>
+                </form>
+            </div>
+        </main>
+    <script src="../butao.js"></script>
+    <script src="jogo.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imersão Alura</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="flix.css">
+</head>
+<body>
+    <div class="container">
+        <header class="cabecalho">
+            <div class="tema">
+                <button class="mais"><a href="../index.html">Home</a></button>
+                <button class="mais"><a href="../jogo/jogo.html">Hero Trunfo</a></button>
+                <button class="mais"><a href="../aluraflix/flix.html">Flix flix</a></button>
+                <button onclick="mudaTema()">Alterar Tema</button>
+            </div>
+        </header>
+        <main class="projetos projetos-flix">
+                <div class="main">
+                    <h1 class="page-title">Aluraflix</h1>
+                    <img src="../img/logo-imersao-aluraflix.svg" class="page-logo" alt="Logo da Aluraflix">
+                    <p class="page-subtitle">Qual seu filme favorito?</p>
+                    <div class="form-wrapper">
+                        <input type="text" id="filme" name="filme" placeholder="Insira endereço de imagem">
+                        <button onclick="adicionarFilme()">Adicionar Filme</button>
+                    </div>
+                </div>
+                <div id="listaFilmes"></div>
+                <a href="https://www.alura.com.br/" target="_blank">
+                    <img src="../img/alura-logo.svg" class="alura-logo" alt="alura-logo">
+                </a>
+        </main>
+        <script src="flix.js"></script>
+    <script src="../butao.js"></script>
+</body>
+</html>
