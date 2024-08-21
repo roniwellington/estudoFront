@@ -1,0 +1,83 @@
+:root {
+    –cor-roxa: #9353FF;
+}
+
+button {
+    background-color: var(--cor-roxa);
+}
+
+.caixa-de-sugestoes {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+ text-align: center;    
+}
+  .caixa-de-sugestoes h1 {
+    font-size: 20px;
+  }
+ .caixa-de-sugestoes input {
+    width: 100%;
+    max-width: 400px;
+    padding: 7px 15px;
+    margin: 10px 0;
+    box-sizing: border-box;
+  }
+  .caixa-de-sugestoes button {
+    background-color: #9353FF;
+    color: white;
+    border: none;
+    padding: 9px 18px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .caixa-de-sugestoes input::placeholder {
+    font-family: 'Inter', sans-serif; /* Fonte Inter para o placeholder */
+    font-size: 16px;                  /* Tamanho da fonte do placeholder */
+    color: #6C757D;                   /* Cor do texto do placeholder */
+  }
+
+  .container {
+    width: 729px;                  /* Largura fixa */
+    padding: 40px;                 /* Espaçamento interno de 40px */
+    border: 2px solid black;       /* Borda sólida de 2px na cor preta */
+    margin: auto;                  /* Centraliza o container horizontalmente */
+  }
+
+  /* Estilo do checkbox padrão */
+.input-checkbox {
+    display: none;
+}
+
+/* Estilo do checkbox personalizado */
+.checkbox-customizado {
+    width: 20px;
+    height: 20px;
+    background-color: white; /* Cor de fundo padrão */
+    border: 1px black; /* Borda */
+    cursor: pointer; /* Cursor ao passar por cima */
+    border-radius: 4px; /* Cantos arredondados */
+}
+
+/* Estilo do checkbox personalizado quando marcado */
+.checked {
+    background-color: #9353FF; /* Cor de fundo quando marcado */
+    position: relative; /* Posição relativa para o ícone de check */
+}
+
+/* Estilo do ícone de check */
+.checkbox-customizado.checked::after {
+    content: ""; /* Adiciona um conteúdo vazio */
+    position: absolute; /* Posicionamento absoluto em relação ao checkbox */
+    left: 30%; /* Ajuste de posição horizontal */
+    width: 5px; /* Largura do ícone */
+    height: 14px; /* Altura do ícone */
+    /* Estilo da linha do ícone */
+    border-top: 2px solid var(--neutro);
+    border-left: 2px solid var(--neutro);
+    transform: rotate(-140deg); /* Rotação para formar o ícone de check */
+}
